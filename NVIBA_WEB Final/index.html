@@ -11,6 +11,11 @@
 <div id="wrapper">
 	<header class="relative">
 		<div id="clouds" class="absolute"></div>
+<<<<<<< HEAD
+		<div class="cat_animation cat1">
+		</div>
+=======
+>>>>>>> FETCH_HEAD
 	</header>
 	<nav>
 		<div id="menu"></div>
@@ -30,6 +35,119 @@
 	<section class="scrollblock"></section>
 	<footer></footer>
 </div>
+<<<<<<< HEAD
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.scrollorama.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$(document).ready(function() {
+    			var scrollorama = $.scrollorama({
+        		blocks:'.scrollblock'
+    			});
+
+			scrollorama
+			.animate('#test',{duration:1000, property:'opacity', start:0})
+			.animate('#testdos',{delay: 400, duration: 300, property:'left', start:-1400, end:1400 })
+			.animate('#testtres',{delay:100, duration:800, property:'top', start:-800, end:800})
+			.animate('#testtres',{delay:100, duration:800, property:'right', start:-800, end:800})
+
+			});
+		});
+
+
+	jQuery(window).scroll(function(){
+    var fromTopPx = 20; // distance to trigger
+    var fromTopPx2 = 40; // distance to trigger
+    var fromTopPx3 = 60; // distance to trigger
+    var fromTopPx4 = 80; // distance to trigger
+    var fromTopPx5 = 100; // distance to trigger
+    var fromTopPx6 = 120; // distance to trigger
+    var fromTopPx7 = 140; // distance to trigger
+    var fromTopPx8 = 160; // distance to trigger
+    var fromTopPx9 = 180; // distance to trigger
+    var fromTopPx10 = 200; // distance to trigger
+    var fromTopPx11 = 220; // distance to trigger
+
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('div.cat_animation').addClass('cat2');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat2');
+    }
+
+     if(scrolledFromtop > fromTopPx2){
+        jQuery('div.cat_animation').addClass('cat3');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat3');
+    }
+
+     if(scrolledFromtop > fromTopPx3){
+        jQuery('div.cat_animation').addClass('cat4');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat4');
+    }
+
+     if(scrolledFromtop > fromTopPx4){
+        jQuery('div.cat_animation').addClass('cat5');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat5');
+    }
+
+     if(scrolledFromtop > fromTopPx5){
+        jQuery('div.cat_animation').addClass('cat6');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat6');
+    }
+
+     if(scrolledFromtop > fromTopPx6){
+        jQuery('div.cat_animation').addClass('cat7');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat7');
+    }
+
+     if(scrolledFromtop > fromTopPx7){
+        jQuery('div.cat_animation').addClass('cat8');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat8');
+    }
+
+     if(scrolledFromtop > fromTopPx8){
+        jQuery('div.cat_animation').addClass('cat9');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat9');
+    }
+
+     if(scrolledFromtop > fromTopPx9){
+        jQuery('div.cat_animation').addClass('cat10');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat10');
+    }
+
+     if(scrolledFromtop > fromTopPx10){
+        jQuery('div.cat_animation').addClass('cat11');
+    }
+    else{
+        jQuery('div.cat_animation').removeClass('cat11');
+    }
+
+});
+	</script>
+	<script src="js/skrollr.js"></script>
+=======
+>>>>>>> FETCH_HEAD
 	
 </body>
 </html>
