@@ -5,10 +5,13 @@
 	<title>NVIBA</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/stile_principale.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 </head>
 <body>
 <div id="wrapper">
 	<header class="relative scrollblock">
+        <h1 id="landingText">Some big ass type because David thinks that's cool</h1>
         <div class="white_birds">
             <img src="assets/white-birds.png" alt="White Birds">
         </div>
@@ -18,8 +21,18 @@
             <img src="assets/red-birds.png" alt="Red Birds" class="ucello">
         </div>
 	</header>
-	<nav>
-		<div id="menu"></div>
+	<nav class="sticker">
+		<div id="menu">
+            <ul id="buttons">
+                <li class="item"><a href="#">TOP</a></li>
+                <li class="item"><a href="#">PROFILE</a></li>
+                <li class="item"><a href="#">PORTFOLIO</a></li>
+                <li class="item"><a href="#">BRANDING</a></li>
+                <li class="item"><a href="#">SERVICES</a></li>
+                <li class="item"><a href="#">CONTACT</a></li>
+                <li class="item"><a href="#">CLIENTZONE</a></li>
+            </ul>      
+        </div>
 		<div id="logo_content">
 			<figure>
 				<div id="logo_square">
@@ -40,6 +53,13 @@
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $(".sticker").sticky({topSpacing:0});
+    });
+    </script>
 
     <script type="text/javascript">
     $(document).ready(function(){
