@@ -24,6 +24,8 @@
 									window.setTimeout(callback, 1000 / 60);
 								},
 			defaults = {offset:0, enablePin: false};
+			
+
 		
 		scrollorama.settings = $.extend({}, defaults, options);
 		scrollorama.blockIndex = 0;
