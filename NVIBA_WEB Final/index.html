@@ -73,8 +73,10 @@
                 </div>
         </div>
     </section>
-	<section class="portfolio scrollblock">
-        
+	<section class="portfolio scrollblock relative">
+        <figure class="skiador scrollblock relative">
+            <img src="assets/svg/ski.svg" alt="" width="100%">
+        </figure>
     </section>
 	<section class="scrollblock"></section>
 	<section class="scrollblock"></section>
@@ -151,6 +153,9 @@
             .animate('#cholula',{delay:100, duration:350, property:'top',start:-550 , end:0})
             .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
             .animate('.form_content',{delay:100, duration:550, property:'top',start:1500 , end:400})
+           .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
+           .animate('.skiador img',{duration:350, property:'top', start:145 , end:445})
+           .animate('.skiador img',{duration:350, property:'right', start:10 , end:465})
 
             });
         });
