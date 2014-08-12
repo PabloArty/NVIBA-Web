@@ -79,9 +79,16 @@
 	<section class="scrollblock"></section>
 	<section class="scrollblock"></section>
 	<section class="contact_us scrollblock">
-        <span class="title_contactus"> CONTACT US </span>
+        
+        <figure class="astronaut">
+            <img src="assets/svg/astronaut.svg" alt="Hi!">   
+        </figure>
+
+        
         <article class="form_content">
             <div class="wrapper">
+                <span class="title_contactus"> CONTACT US </span>
+
                 <article class="izq">
                     <h1>Contact us</h1>
                     <p>If you have a question, suggestion, please fill out and submit the form below. Thank you. 
@@ -142,6 +149,8 @@
             .animate('.ucello',{delay:100, duration:150, property:'opacity', start:1, end:0})
             .animate('#elpopo',{duration:500, property:'top',start:-540 , end:-100})
             .animate('#cholula',{delay:100, duration:350, property:'top',start:-550 , end:0})
+            .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
+            .animate('.form_content',{delay:100, duration:550, property:'top',start:1500 , end:400})
 
             });
         });
