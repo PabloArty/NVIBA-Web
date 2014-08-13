@@ -81,7 +81,7 @@
         <figure class="skiador">
             <img src="assets/svg/ski.svg" alt="">
         </figure>
-        <div id="portfolio_content">
+        <article id="portfolio_content">
             <span class="title_request"> OUR PLAYGROUND</span>
         <div class="main-content">
             <div class="container">
@@ -374,9 +374,20 @@
                 <div class="clear">&nbsp;</div>
             </div>          
         </div>
-        </div>
+        </article>
     </section>
 
+    <section id="services" class="scrollblock relative">
+        <figure id="ovni">
+            <img src="assets/svg/ovni.svg" alt="">
+        </figure>
+        <article id="services_content">
+            <span class="title_request"> OUR PLAYGROUND</span>
+            <div id="slider_content">
+                
+            </div>
+        </article>
+    </section>
 
 	<section class="request scrollblock">
         <figure class="clavadista">
@@ -459,6 +470,10 @@
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.portfolio.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.sticky.js"></script>
 
     <script>
@@ -488,10 +503,17 @@
             .animate('.skiador img',{delay:400, duration:450, property:'top', start:105 , end:380})
             .animate('.skiador img',{delay:400, duration:450, property:'right', start:10 , end:420})
             .animate('.form_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
+<<<<<<< HEAD
             .animate('.clavadista img',{delay:100, duration:
                 650, property:'top',start:-450 , end:180})
             .animate('.request_content',{delay:100, duration:800, property:'top',start:3500 , end:400})
             .animate('#portfolio_content',{delay:100, duration:1200, property:'top',start:1400 , end:150})
+=======
+            .animate('.clavadista img',{delay:100, duration:550, property:'top',start:-450 , end:180})
+            .animate('.request_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
+            .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:450})
+            .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:350})
+>>>>>>> FETCH_HEAD
             });
         });
     </script>
