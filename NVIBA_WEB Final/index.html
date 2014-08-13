@@ -475,8 +475,30 @@
             </div>
         </article>   
     </section>
-	<section class="scrollblock"></section>
-	<footer></footer>
+	<section class="maps scrollblock">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5590.801619402985!2d-73.59525385462629!3d45.52213931740257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1407951550394" width="100%" height="600" frameborder="0" style="border:0"></iframe>   
+    </section>
+	<footer>
+        <article id="footer_wrapper">
+            <span> Copyright © NVIBA 2014 </span>
+             <figure id="feather1" class="white_feathers">
+                 <img src="assets/feather.png" alt="This is a Red feather">
+             </figure>
+             <figure id="feather2" class="white_feathers">
+                 <img src="assets/feather2.png" alt="This is a Red feather">
+             </figure>
+             <figure id="feather3" class="white_feathers">
+                 <img src="assets/feather3.png" alt="This is a Red feather">
+             </figure>
+             <figure id="feather4" class="white_feathers">
+                 <img src="assets/feather4.png" alt="This is a Red feather">
+             </figure> 
+             <figure id="cat_footer" class="white_feathers">
+                 <img src="assets/footer_cat.png" alt="This is a Red Cat">
+             </figure>  
+        </article>
+     <div id="red_underline"></div>
+    </footer>
 </div>
 	
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -512,15 +534,26 @@
             .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
             .animate('.form_content',{delay:100, duration:550, property:'top',start:1500 , end:400})
             .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
-            .animate('.skiador img',{delay:400, duration:450, property:'top', start:105 , end:330})
-            .animate('.skiador img',{delay:400, duration:450, property:'right', start:10 , end:345})
-            .animate('.form_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
+            .animate('.skiador img',{delay:400, duration:450, property:'top', start:105 , end:410})
+            .animate('.skiador img',{delay:400, duration:450, property:'right', start:10 , end:470})
+            .animate('#portfolio_content',{delay:100, duration:50, property:'top',start:1200 , end:100})
+            .animate('.form_content',{delay:100, duration:600, property:'top',start:3500 , end:400})
+            .animate('.clavadista img',{delay:100, duration:
+                650, property:'top',start:-450 , end:180})
+            .animate('.request_content',{delay:100, duration:800, property:'top',start:3500 , end:400})
             .animate('.clavadista img',{delay:100, duration:550, property:'top',start:-450 , end:180})
             .animate('.request_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
             .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:450})
             .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:350})
+<<<<<<< HEAD
             .animate('#ovni img',{duration:1000, property:'top', start:100, end:500})
             .animate('#ovni img',{duration:1000, property:'left', start:100, end:800})
+=======
+            .animate('.feather1 img',{delay:100, duration:550, property:'top',start:-450 , end:180})
+            .animate('#feather2 img',{delay:10, duration:100, property:'top',start:1500 , end:250})
+            .animate('#feather3 img',{delay:10, duration:100, property:'top',start:1500 , end:350})
+            .animate('#feather4 img',{delay:10, duration:100, property:'top',start:1500 , end:50})
+>>>>>>> FETCH_HEAD
             });
         });
     </script>
