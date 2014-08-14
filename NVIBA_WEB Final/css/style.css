@@ -5,77 +5,45 @@
 }
 
 .tabs input {
-	position: absolute;
+	position: relative;
+	font-size: 40px;
+	color:gray;
 	z-index: 1000;
-	width: 120px;
-	height: 40px;
+	margin: 10px 30px;
 	left: 0px;
 	top: 0px;
-	opacity: 0;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
 	cursor: pointer;
-}
-.tabs input#tab-2{
-	left: 120px;
-}
-.tabs input#tab-3{
-	left: 240px;
-}
-.tabs input#tab-4{
-	left: 360px;
+	border: 0px;
+	transition-duration:0.2s;
+	-webkit-transition-duration:0.2s;
+	-ms-transition-duration:0.2s;
+	-webkit-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
-.tabs label {
-	font-size: 15px;
-	line-height: 40px;
-	height: 40px;
-	position: relative;
-	padding: 0 20px;
-    float: left;
-	display: block;
-	width: 80px;
-	color: #385c5b;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-    }
 
-.tabs label:after {
-    content: '';
-	background: #fff;
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	display: block;
-}
 
-.tabs label:first-of-type {
-   
-}
-
-.tab-label-2 {
-    z-index: 3;
-}
-
-.tab-label-3 {
-    z-index: 2;
-}
-
-.tab-label-4 {
-    z-index: 1;
-}
-
-.tabs input:checked + label {
+.tabs input:checked {
     background: #fff;
 	z-index: 6;
+	color:red;
+	font-size: 60px;
+	transition-duration:0.2s;
+	border: 0px; 
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .clear-shadow {
 	clear: both;
+	background: transparent;
 }
 
 .content {
