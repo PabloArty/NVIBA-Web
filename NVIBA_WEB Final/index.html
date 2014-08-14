@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="icon_fonts/style.css">
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />   
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
 
 </head>
 <body>
@@ -550,12 +552,13 @@
     </footer>
 </div>
 
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
     <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
     <script>
@@ -564,7 +567,10 @@
         $( "#tabs_services" ).tabs();
     });
 
-    
+    $("a.fancybox").fancybox();
+
+    $('.project').bxSlider();
+
     </script>
     <script type="text/javascript">
     $(document).ready(function(){
