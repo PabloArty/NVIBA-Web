@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />   
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-
 </head>
 <body>
 
@@ -390,47 +389,21 @@
         <figure id="ovni">
             <img src="assets/svg/ovni.svg" alt="">
         </figure>
-        <article id="services_content">
-            <span class="title_request"> OUR PLAYGROUND</span>
-            
+       <article id="services_content" class="scrollblock">
+    <!-- tab "panes" -->
+  <div class="panes">
+    <div>pane 1 content</div>
+    <div>pane 2 content</div>
+    <div>pane 3 content</div>
+  </div>
+           <!-- the tabs -->
+  <ul class="tabs">
+    <li><a href="#">Tab 1</a></li>
+    <li><a href="#">Tab 2</a></li>
+    <li><a href="#">Tab 3</a></li>
+  </ul>
 
-            <section class="tabs">
-                <div class="wrapper">
-                <article id="menu_tabs">
-
-                
-                
-            
-
-                <div class="clear-shadow"></div>
-                
-                <div class="content">
-                    <div class="content-1">
-                    
-                    </div>
-                    <div class="content-2">
-                         
-                    </div>
-                    <div class="content-3">
-                         
-                    </div>
-                    <div class="content-4">
-                         
-                    </div>
-                </div>
-
-                <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 icon-print_icon" checked="checked" />
-        
-                <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2 icon-graphic_icon">
-        
-                <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3 icon-web_icon" />
-            
-                <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4 icon-message_icon" />
-            </section>
-            
-
-        </div>
-        </article>
+       </article>
     </section>
 
     <section id="moreclients" class="scrollblock relative">
@@ -543,6 +516,7 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
+    <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
     <script>
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
@@ -574,22 +548,14 @@
             .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
             .animate('.skiador img',{delay:400, duration:1300, property:'top', start:190 , end:900})
             .animate('.skiador img',{delay:400, duration:1300, property:'right', start:5 , end:1100})
-            .animate('#portfolio_content',{delay:100, duration:100, property:'top',start:850 , end:150})
             .animate('.form_content',{delay:100, duration:600, property:'top',start:3500 , end:400})
-            .animate('.clavadista img',{delay:100, duration:
-                650, property:'top',start:-450 , end:180})
+            
             .animate('.request_content',{delay:100, duration:800, property:'top',start:3500 , end:400})
             .animate('.clavadista img',{delay:100, duration:850, property:'top',start:-450 , end:450})
             .animate('.request_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
-<<<<<<< HEAD
-            .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:450})
-            .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
-=======
+                        .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
             .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:50})
-            .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:350})
->>>>>>> FETCH_HEAD
-            .animate('#ovni img',{duration:1000, property:'top', start:100, end:500})
-            .animate('#ovni img',{duration:1000, property:'left', start:100, end:800})
+            .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
             .animate('#more_content',{delay:100, duration:800, property:'top',start:1000 , end:0})
             .animate('#ovni img',{duration:2000, property:'top', start:100, end:800})
             .animate('#ovni img',{duration:2000, property:'left', start:100, end:2000})
@@ -599,6 +565,9 @@
         });
     </script>
 	<script type="text/javascript">
+
+     $("ul.tabs").tabs("div.panes > div");
+
 	jQuery(window).scroll(function(){
     var fromTopPx = 20; // distance to trigger
     var fromTopPx2 = 40; // distance to trigger
