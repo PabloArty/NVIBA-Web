@@ -13,13 +13,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />   
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-<<<<<<< HEAD
-=======
 
     <script src="http://nviba-media.stagingblender.com/js/jquery-1.8.3.min.js"></script>
     <script src="http://nviba-media.stagingblender.com/js/jquery.easing.1.3.js"></script>
-    
->>>>>>> FETCH_HEAD
+
 </head>
 <body>
 
@@ -54,13 +51,13 @@
 	<nav class="sticker">
 		<div id="menu">
             <ul id="buttons">
-                <li class="menu_item"><a href=".profile">ABOUT</a></li>
-                <li class="menu_item"><a href="#">PORTFOLIO</a></li>
-                <li class="menu_item"><a href="#">CLIENTS</a></li>
-                <li class="menu_item"><a href="#">SERVICES</a></li>
-                <li class="menu_item"><a href="#">REQUEST A QUOTE</a></li>
-                <li class="menu_item"><a href="#">CONTACT</a></li>
-                <li class="menu_item"><a href="#">CLIENTZONE</a></li>
+                <li class="menu_item"><a href="#profile">ABOUT</a></li>
+                <li class="menu_item"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="menu_item"><a href="#services">CLIENTS</a></li>
+                <li class="menu_item"><a href="#services">SERVICES</a></li>
+                <li class="menu_item"><a href="#request">REQUEST A QUOTE</a></li>
+                <li class="menu_item"><a href="#contact_us">CONTACT</a></li>
+                <li class="menu_item"><a href="#moreclients">CLIENTZONE</a></li>
             </ul>      
         </div>
 		<div id="logo_content">
@@ -71,7 +68,7 @@
 			</figure>
 		</div>
 	</nav>
-	<section class="profile scrollblock relative">
+	<section id="profile" class="scrollblock relative">
         <div id="profile_content" class="scrollblock">
             <figure id="elpopo"><img src="assets/elpopo.png" alt="" width="100%"></figure>
             <figure id="cholula"><img src="" alt="" width="100%">
@@ -433,21 +430,32 @@
         <figure id="ovni">
             <img src="assets/svg/ovni.svg" alt="">
         </figure>
-       <article id="services_content" class="scrollblock">
-    <!-- tab "panes" -->
-  <div class="panes">
-    <div>pane 1 content</div>
-    <div>pane 2 content</div>
-    <div>pane 3 content</div>
-  </div>
-           <!-- the tabs -->
-  <ul class="tabs">
-    <li><a href="#">Tab 1</a></li>
-    <li><a href="#">Tab 2</a></li>
-    <li><a href="#">Tab 3</a></li>
-  </ul>
+        <article id="services_content">
+            <span class="title_request"> OUR PLAYGROUND</span>
 
-       </article>
+        <section class="tabs_serv">
+            <!-- TABS SERVICES -->
+            <!-- the tabs -->
+
+              <ul class="tabs_in">
+                <li><a href="#">Tab 1</a></li>
+                <li><a href="#">Tab 2</a></li>
+                <li><a href="#">Tab 3</a></li>
+              </ul>
+             
+              <!-- tab "panes" -->
+              <div class="panes_in">
+                <div>pane 1 content</div>
+                <div>pane 2 content</div>
+                <div>pane 3 content</div>
+              </div>
+
+            <!-- TABS SERVICES -->
+        </section>
+            
+
+        
+        </article>
     </section>
 
     <section id="moreclients" class="scrollblock relative">
@@ -459,7 +467,7 @@
         </article>
     </section>
 
-	<section class="request scrollblock">
+	<section id="request" class="scrollblock">
         <figure class="clavadista">
             <img src="assets/svg/clavadista.svg" alt="My God!">   
         </figure>
@@ -489,7 +497,7 @@
             </div>
         </article>     
     </section>
-	<section class="contact_us scrollblock">
+	<section id="contact_us" class="scrollblock">
         
         <figure class="astronaut">
             <img src="assets/svg/astronaut.svg" alt="Hi!">   
@@ -518,14 +526,43 @@
                         <input class="submit_btn" type="submit" value="SEND">
                     </form>
                 </article>
+
+                 <article class="der">
+                    <div class="contactTtl">
+                        Careers                 </div>
+                    <input type="text" name="name" placeholder="Name">
+                        <div class="contactBox">
+                            <p>Area of Expertise</p>
+                            <div>
+                                <label for="frontEnd">Web Design & Integration</label><input type="checkbox" id="frontEnd" name="design_integration">
+                            </div>
+                            <div>
+                                <label for="backEnd">PHP/MySQL Programming</label><input type="checkbox" id="backEnd" name="php_mysql">
+                            </div>
+                            <div>
+                                <label for="graphicDesign">Graphic Design</label><input type="checkbox" id="graphicDesign" name="graphic_design">
+                            </div>
+                            <div>
+                                <label for="sales">Sales & Management</label><input type="checkbox" id="sales" name="sales">
+                            </div>
+                        </div>
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Phone">
+                    <div class="contactBox">
+                        <label for="cv">CV (PDF only)</label><input type="file" id="cv">
+                    </div>
+                    <input class="submit_btn" type="submit" value="SEND">
+                </div>
+                </article>
+
                 <article class="icons">
-                    <div class="icon-mail_icon"></div>
-                    <div class="icon-job_icon"></div>
+                    <div class="icon-mail_icon"> </div>
+                    <div class="icon-job_icon"> </div>
                 </article>
             </div>
         </article>   
     </section>
-	<section class="maps scrollblock">
+	<section id="maps" class="scrollblock">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5590.801619402985!2d-73.59525385462629!3d45.52213931740257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1407951550394" width="100%" height="500" frameborder="0" style="border:0"></iframe>   
     </section>
 	<footer>
@@ -554,15 +591,27 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
-    <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js">
+    </script>
     <script>
+   jQuery.browser={};(function(){jQuery.browser.msie=false;
+jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
+jQuery.browser.msie=false;jQuery.browser.version=RegExp.$1;}})();
 
+    $(document).ready(function(){
+        $(".sticker").sticky({topSpacing:0});
+        $("ul.tabs_in").tabs("div.panes_in > div");
+    });
+    </script>
+    <script>
 
 $(document).ready(function(){
     slider = $('.projectSlideshow').bxSlider({
@@ -578,7 +627,7 @@ $(document).ready(function(){
 
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
-        $( "#tabs_services" ).tabs();
+        $("ul.tabs_in").tabs("div.panes_in > div");
     });
 
     $("a.fancybox").fancybox();
@@ -606,23 +655,19 @@ $(document).ready(function(){
             .animate('.astronaut img',{delay:100, duration:350, property:'top',start:-550 , end:-25})
             .animate('.skiador img',{delay:400, duration:1300, property:'top', start:190 , end:900})
             .animate('.skiador img',{delay:400, duration:1300, property:'right', start:5 , end:1100})
+            .animate('#portfolio_content',{delay:100, duration:100, property:'top',start:850 , end:150})
             .animate('.form_content',{delay:100, duration:600, property:'top',start:3500 , end:400})
-            
+            .animate('.clavadista img',{delay:100, duration:
+                650, property:'top',start:-450 , end:180})
             .animate('.request_content',{delay:100, duration:800, property:'top',start:3500 , end:400})
             .animate('.clavadista img',{delay:100, duration:850, property:'top',start:-450 , end:450})
             .animate('.request_content',{delay:100, duration:700, property:'top',start:3500 , end:400})
-<<<<<<< HEAD
-                        .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
-            .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:50})
-            .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
-=======
             .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:450})
             .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:150})
             .animate('#portfolio_content',{delay:100, duration:1400, property:'top',start:1400 , end:50})
             .animate('#services_content',{delay:100, duration:1400, property:'top',start:1500 , end:350})
             .animate('#ovni img',{duration:1000, property:'top', start:100, end:500})
             .animate('#ovni img',{duration:1000, property:'left', start:100, end:800})
->>>>>>> FETCH_HEAD
             .animate('#more_content',{delay:100, duration:800, property:'top',start:1000 , end:0})
             .animate('#ovni img',{duration:2000, property:'top', start:100, end:800})
             .animate('#ovni img',{duration:2000, property:'left', start:100, end:2000})
@@ -632,9 +677,6 @@ $(document).ready(function(){
         });
     </script>
 	<script type="text/javascript">
-
-     $("ul.tabs").tabs("div.panes > div");
-
 	jQuery(window).scroll(function(){
     var fromTopPx = 20; // distance to trigger
     var fromTopPx2 = 40; // distance to trigger

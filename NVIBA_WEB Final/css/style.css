@@ -30,7 +30,7 @@
 
 .tabs input:checked {
     background: #fff;
-	z-index: 10;
+	z-index: 6;
 	color:red;
 	font-size: 60px;
 	transition-duration:0.2s;
@@ -43,6 +43,7 @@
 
 .clear-shadow {
 	clear: both;
+	background: transparent;
 }
 
 .content {
