@@ -15,8 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
 
     <script src="http://nviba-media.stagingblender.com/js/jquery-1.8.3.min.js"></script>
-    <script src="http://nviba-media.stagingblender.com/js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     
+
 </head>
 <body>
 
@@ -51,13 +53,13 @@
 	<nav class="sticker">
 		<div id="menu">
             <ul id="buttons">
-                <li class="menu_item"><a href=".profile">ABOUT</a></li>
-                <li class="menu_item"><a href="#">PORTFOLIO</a></li>
-                <li class="menu_item"><a href="#">CLIENTS</a></li>
-                <li class="menu_item"><a href="#">SERVICES</a></li>
-                <li class="menu_item"><a href="#">REQUEST A QUOTE</a></li>
-                <li class="menu_item"><a href="#">CONTACT</a></li>
-                <li class="menu_item"><a href="#">CLIENTZONE</a></li>
+                <li class="menu_item"><a href="#profile">ABOUT</a></li>
+                <li class="menu_item"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="menu_item"><a href="#services">CLIENTS</a></li>
+                <li class="menu_item"><a href="#services">SERVICES</a></li>
+                <li class="menu_item"><a href="#request">REQUEST A QUOTE</a></li>
+                <li class="menu_item"><a href="#contact_us">CONTACT</a></li>
+                <li class="menu_item"><a href="#moreclients">CLIENTZONE</a></li>
             </ul>      
         </div>
 		<div id="logo_content">
@@ -68,7 +70,7 @@
 			</figure>
 		</div>
 	</nav>
-	<section class="profile scrollblock relative">
+	<section id="profile" class="scrollblock relative">
         <div id="profile_content" class="scrollblock">
             <figure id="elpopo"><img src="assets/elpopo.png" alt="" width="100%"></figure>
             <figure id="cholula"><img src="" alt="" width="100%">
@@ -133,19 +135,30 @@
             <span class="title_request"> OUR PLAYGROUND</span>
             <!-- Content -->
             <div class="main-content">
-                <div class="container">
+                <div class="container"> 
+
+            <!-- TABS SERVICES -->
+
+
                     <!-- Tabs -->           
-                        <div class="top-tabs">
-                            <ul>
-                                <li class="active"><a href="#logosarea">LOGOS</a></li>
-                                <li><a href="#websites">WEBSITES</a></li>
-                                <li><a href="#prints">PRINT</a></li>
+                       <!-- <div class="top-tabs"> -->
+                            <!-- the tabs -->
+                            <ul class="tabs_portfolio">
+                                <li class="active"><a href="#">LOGOS</a></li>
+                                <li><a href="#">WEBSITES</a></li>
+                                <li><a href="#">PRINT</a></li>
                             </ul>
+
                             <div class="clear">&nbsp;</div>
-                        </div>                      
-                        <div class="content-tabs">
+                       <!--  </div>   -->     
+
+                        <!-- tab "panes" -->  
+                    <div class="panes_portfolio">
+
+                        <div> <!-- Abre panel Logos-->       
+                        
                             <!-- Logos -->  
-                            <div id="logosarea" class="tab active">
+                            <div id="logosarea">
                                 <ul>
                                     <li>
                                         <a href="#logos1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-1.jpg"></a>
@@ -303,9 +316,14 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-15.jpg"></a></li>
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/logo-16.jpg"></a></li>
                                 </ul>       
-                            </div>                      
+                            </div>   
+
+                        </div>    <!-- Cierra tab logos-->
+                        
+                        <div>
+                        
                             <!-- Websites -->
-                            <div id="websites" class="tab">
+                            <div id="websites">
                                 <ul class="col">
                                     <li>
                                         <a href="#websites1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-1.jpg"></a>
@@ -372,9 +390,11 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-13.jpg"></a></li>
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/websites-14.jpg"></a></li>
                                 </ul>                           
-                            </div>                      
+                            </div>  
+                        </div>  
+                        <div>               
                             <!-- Print -->
-                            <div id="prints" class="tab">
+                            <div id="prints">
                                 <ul class="col">
                                     <li><a href="#prints1" class="fancybox"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/print-1.jpg"></a>
                                         <div class="hide">
@@ -419,7 +439,10 @@
                                     <li><a href="#"><img src="http://nviba-media.stagingblender.com/images/section-ourplayground/print-12.jpg"></a></li>
                                 </ul>
                             </div>
-                        </div>          
+                        </div>
+
+                    </div> <!-- Termian div contenedor de los panels -->
+
                     <div class="clear">&nbsp;</div>
                 </div>          
             </div>
@@ -432,44 +455,29 @@
         </figure>
         <article id="services_content">
             <span class="title_request"> OUR PLAYGROUND</span>
+
+        <section class="tabs_serv">
+            <!-- TABS SERVICES -->
+            <!-- the tabs -->
+
+              <ul class="tabs_in">
+                <li><a href="#">Tab 1</a></li>
+                <li><a href="#">Tab 2</a></li>
+                <li><a href="#">Tab 3</a></li>
+              </ul>
+             
+              <!-- tab "panes" -->
+              <div class="panes_in">
+                <div>pane 1 content</div>
+                <div>pane 2 content</div>
+                <div>pane 3 content</div>
+              </div>
+
+            <!-- TABS SERVICES -->
+        </section>
             
 
-            <section class="tabs">
-                <div class="wrapper">
-                <article id="menu_tabs">
-
-                
-                
-            
-
-                <div class="clear-shadow"></div>
-                
-                <div class="content">
-                    <div class="content-1">
-                    
-                    </div>
-                    <div class="content-2">
-                         
-                    </div>
-                    <div class="content-3">
-                         
-                    </div>
-                    <div class="content-4">
-                         
-                    </div>
-                </div>
-
-                <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 icon-print_icon" checked="checked" />
         
-                <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2 icon-graphic_icon">
-        
-                <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3 icon-web_icon" />
-            
-                <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4 icon-message_icon" />
-            </section>
-            
-
-        </div>
         </article>
     </section>
 
@@ -482,7 +490,7 @@
         </article>
     </section>
 
-	<section class="request scrollblock">
+	<section id="request" class="scrollblock">
         <figure class="clavadista">
             <img src="assets/svg/clavadista.svg" alt="My God!">   
         </figure>
@@ -512,7 +520,7 @@
             </div>
         </article>     
     </section>
-	<section class="contact_us scrollblock">
+	<section id="contact_us" class="scrollblock">
         
         <figure class="astronaut">
             <img src="assets/svg/astronaut.svg" alt="Hi!">   
@@ -532,23 +540,69 @@
                     <p>FAX. <strong> 514.788.13.16 </strong> </p>
                     <a href=""> <strong>info@nviba.com </strong> </a> 
                 </article>
-                <article class="der">
-                    <form action="" method="post">
-                        <input type="text" placeholder="NAME">
-                        <input type="email" placeholder="E-MAIL">
-                        <input type="text" placeholder="SUBJECT">
-                        <textarea placeholder="MESSAGE"></textarea>
-                        <input class="submit_btn" type="submit" value="SEND">
-                    </form>
+                
+                 <article class="der">
+                    <!-- TABS SERVICES -->
+                      <!-- tab "panes" -->
+                      <div class="panes_contactus">
+                        <div>
+                            <form action="" method="post">
+                            <input type="text" placeholder="NAME">
+                            <input type="email" placeholder="E-MAIL">
+                            <input type="text" placeholder="SUBJECT">
+                            <textarea placeholder="MESSAGE"></textarea>
+                            <input class="submit_btn" type="submit" value="SEND">
+                            </form>
+                        </div>
+                         <!-- tab "panel 2" -->
+                        <div>
+                            <div class="contactTtl">Careers</div>
+                            <input type="text" name="name" placeholder="Name">
+                            <div class="contactBox">
+                            <p>Area of Expertise</p>
+                            <div class="career_chkbx">
+                                <label for="frontEnd">Web Design & Integration</label><input class="checkbx" type="checkbox" id="frontEnd" name="design_integration">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="backEnd">PHP/MySQL Programming</label><input class="checkbx"type="checkbox" id="backEnd" name="php_mysql">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="graphicDesign">Graphic Design</label><input class="checkbx" type="checkbox" id="graphicDesign" name="graphic_design">
+                            </div>
+                            <div class="career_chkbx">
+                                <label for="sales">Sales & Management</label><input class="checkbx" type="checkbox" id="sales" name="sales">
+                            </div>
+                           </div>
+                            <input type="text" name="email" placeholder="Email">
+                            <input type="text" name="phone" placeholder="Phone">
+                            <div class="contactBox">
+                                <label for="cv">CV (PDF only)</label><input class="file_label" type="file" id="cv">
+                            </div>
+                            <input class="submit_btn" type="submit" value="SEND">
+                            </div>
+                            </div>
+                      </div>
+                    <!-- TABS SERVICES -->
+
+                       <!-- the tabs -->
+
+                     
+                     
+                        <article class="icons">
+                             <ul class="tabs_contactus">
+                                <li><a class="icon-mail_icon" href="#"></a></li>
+                                <li><a class="icon-job_icon" href="#"></a></li>
+                             </ul>
+                        </article>
+                     
+                     
+
                 </article>
-                <article class="icons">
-                    <div class="icon-mail_icon"></div>
-                    <div class="icon-job_icon"></div>
-                </article>
+
             </div>
         </article>   
     </section>
-	<section class="maps scrollblock">
+	<section id="maps" class="scrollblock">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5590.801619402985!2d-73.59525385462629!3d45.52213931740257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1407951550394" width="100%" height="500" frameborder="0" style="border:0"></iframe>   
     </section>
 	<footer>
@@ -577,14 +631,29 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.portfolio.js"></script>  
     <script src="js/jquery.sticky.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js">
+    </script>
     <script>
+   jQuery.browser={};(function(){jQuery.browser.msie=false;
+jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
+jQuery.browser.msie=false;jQuery.browser.version=RegExp.$1;}})();
 
+    $(document).ready(function(){
+        $(".sticker").sticky({topSpacing:0});
+        $("ul.tabs_in").tabs("div.panes_in > div");
+        $("ul.tabs_contactus").tabs("div.panes_contactus > div");
+        $("ul.tabs_portfolio").tabs("div.panes_portfolio > div");
+    });
+    </script>
+    <script>
 
 $(document).ready(function(){
     slider = $('.projectSlideshow').bxSlider({
@@ -600,7 +669,9 @@ $(document).ready(function(){
 
     $(document).ready(function(){
         $(".sticker").sticky({topSpacing:0});
-        $( "#tabs_services" ).tabs();
+        $("ul.tabs_in").tabs("div.panes_in > div");
+        $("ul.tabs_contactus").tabs("div.panes_contactus > div");
+        $("ul.tabs_portfolio").tabs("div.panes_portfolio > div");
     });
 
     $("a.fancybox").fancybox();
